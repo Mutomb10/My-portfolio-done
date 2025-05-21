@@ -1,0 +1,23 @@
+
+.d-block{
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 200px;
+  }
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
