@@ -1,23 +1,70 @@
-
-.d-block{
-    height: 200px;
-    border-radius: 50%;
-    background-color: black;
-    margin-left: 200px;
-  }
+/* General Styling */
 body {
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  .card {
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+/* Profile Image */
+.d-block {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* Cards (Projects Section) */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Hover Effect: Lifted look */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Section Transitions */
+section {
+  padding: 50px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.active {
+  opacity: 3;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
